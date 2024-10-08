@@ -1,10 +1,9 @@
-import './App.css';
-
+import { RouterProvider } from 'react-router-dom';
+import appRouter from './Router/AppRouter';
 function App() {
   return (
-    <div className='bg-red-300 text-green-300'>
-     lets begin the our new project
-    </div>
+    <RouterProvider router={appRouter}/>
+   
   );
 }
 
