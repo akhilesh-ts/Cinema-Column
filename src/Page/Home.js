@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+import BannerCarousel from "../components/BannerCarousel";
+
 
 const Home = () => {
-  return (
-    <div>
-      home
-    </div>
-  )
-}
+  useNowPlayingMovies();
 
-export default Home
+  return (
+    <>
+    <BannerCarousel/>
+    </>
+  );
+};
+
+export default Home;
