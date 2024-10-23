@@ -10,9 +10,11 @@ module.exports = {
     },
     colors: {
       darkBlue: "#00031c",
-      hoverBlue:"#6c56e4"
+      hoverBlue: "#6c56e4",
     },
-    
+    animation: {
+      'spin-slow': 'spin 4s linear infinite',
+    },
   },
   plugins: [flowbite.plugin()],
 };
