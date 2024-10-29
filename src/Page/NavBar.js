@@ -44,7 +44,7 @@ const NavBar = () => {
     });
 
     return () => authSign();
-  },[]);
+  },[dispatch,navigate]);
 
   let firstLetter;
   if (user) {

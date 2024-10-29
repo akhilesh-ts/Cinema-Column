@@ -6,7 +6,7 @@ const FetchVideos = (id) => {
 
   useEffect(() => {
     Videos(id);
-  }, []);
+  }, [id]);
 
   const Videos = async (id) => {
     const data = await fetch(
