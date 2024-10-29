@@ -1,7 +1,7 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { auth } from "../utils/firebase";
 import { adduser, removeUser } from "../utils/slice/userSlice";
 import { Avatar, Dropdown } from "flowbite-react";
@@ -44,7 +44,7 @@ const NavBar = () => {
     });
 
     return () => authSign();
-  }, []);
+  },[]);
 
   let firstLetter;
   if (user) {
